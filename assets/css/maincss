@@ -1,0 +1,174 @@
+:root {
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+body {
+  background-color: lightcyan;
+}
+body #product_form {
+  /**The styling of the form*/
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture #height_group input, body #product_form .product_add_div .selectedProductTypeDiv #furniture #width_group input, body #product_form .product_add_div .selectedProductTypeDiv #furniture #length_group input, body #product_form .product_add_div .selectedProductTypeDiv #DVD #size, body #product_form .product_add_div .selectedProductTypeDiv #book #weight {
+  width: 170px;
+  margin: 30px 50px 20px 50px;
+  padding: 10px;
+  font-family: inherit;
+  box-sizing: border-box;
+  border-radius: 9px;
+  font: 24px serif;
+  height: 50px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture #height_group .error, body #product_form .product_add_div .selectedProductTypeDiv #furniture #width_group .error, body #product_form .product_add_div .selectedProductTypeDiv #furniture #length_group .error, body #product_form .product_add_div .selectedProductTypeDiv #DVD .error, body #product_form .product_add_div .selectedProductTypeDiv #book .error, body #product_form .product_add_div .regular_properties .form_group .error {
+  font-size: 20px;
+  color: white;
+  background-color: #900;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture #height_group input.default, body #product_form .product_add_div .selectedProductTypeDiv #furniture #width_group input.default, body #product_form .product_add_div .selectedProductTypeDiv #furniture #length_group input.default, body #product_form .product_add_div .selectedProductTypeDiv #DVD input.default, body #product_form .product_add_div .selectedProductTypeDiv #book input.default, body #product_form .product_add_div .regular_properties .form_group input.default {
+  color: black;
+  background-color: white;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture #height_group .error.active, body #product_form .product_add_div .selectedProductTypeDiv #furniture #width_group .error.active, body #product_form .product_add_div .selectedProductTypeDiv #furniture #length_group .error.active, body #product_form .product_add_div .selectedProductTypeDiv #DVD .error.active, body #product_form .product_add_div .selectedProductTypeDiv #book .error.active, body #product_form .product_add_div .regular_properties .form_group .error.active {
+  padding: 0.5em;
+  height: 10px;
+  border-radius: 9px;
+  font: 24px serif;
+  border-left: 5px solid gold;
+}
+body #product_form .product_add_div .regular_properties .form_group {
+  display: block;
+}
+body #product_form .product_add_div .regular_properties .form_group input[type=text], body #product_form .product_add_div .regular_properties .form_group input[type=int], body #product_form .product_add_div .regular_properties .form_group input[type=number] {
+  width: 290px;
+  margin: 30px 50px 20px 50px;
+  padding: 10px;
+  font-family: inherit;
+  box-sizing: border-box;
+  border-radius: 9px;
+  font: 24px serif;
+  height: 50px;
+}
+body #product_form .product_add_div .regular_properties .select_group {
+  width: 700px;
+  height: 70px;
+}
+body #product_form .product_add_div .regular_properties .select_group select {
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  margin: 15px;
+}
+body #product_form .product_add_div .regular_properties .select_group #productType {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA3klEQVRIS+3VMU9CMRTF8d8zBL+aizoQFhx0kUk33RzdYMNFXUFnYeGrYYyaJiUxJHDLSxodbNKpfeffc9/pbaPyaCrr+3OA++z4rtT5Pg5GuMnCY9yWQEoBE1xhlUUP8YDrCBIB0vojLvGO0yz4hm4JJAKcYYoPHGOZAUdYoIMBXrc5iQAHeMlzviFygj7O8dkWEJU4XI8chALRhn9AVKHf70VRTHu4wFfbmKZLNKt50dLBnna0imcMd/2I0phWa3Y/D1e1Xa9BCZJG0VuQNpaWKMx72xS1Fl5/WN3BN+AgJhnZQlq4AAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+  color: black;
+  background-color: #f0f5f5;
+  padding: 10px;
+  width: 190px;
+  font: 24px serif;
+  position: relative;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  margin-left: 230px;
+}
+body #product_form .product_add_div .regular_properties .select_group #productType:focus {
+  border: 1px solid #15a6e7;
+  outline: 0;
+}
+body #product_form .product_add_div .regular_properties .select_group label {
+  /*padding or margin : top right bottom left*/
+  display: inline-block;
+  margin: 25px 25px -65px 25px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #book {
+  padding-bottom: 30px;
+  display: none;
+  font-size: 20px;
+  border: 2px solid blue;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #book #weight {
+  color: black;
+  font-weight: bold;
+  margin-left: 80px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #book label {
+  display: inline-block;
+  margin: 25px 25px -65px 25px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #DVD {
+  display: none;
+  font-size: 20px;
+  padding-bottom: 30px;
+  border: 2px solid blue;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #DVD #size {
+  color: black;
+  font-weight: bold;
+  margin-left: 99px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #DVD label {
+  display: inline-block;
+  margin: 25px 25px -65px 25px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture {
+  display: none;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture #height_group, body #product_form .product_add_div .selectedProductTypeDiv #furniture #width_group, body #product_form .product_add_div .selectedProductTypeDiv #furniture #length_group {
+  display: block;
+  margin: 0px 20px -40px 0px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture #height_group input, body #product_form .product_add_div .selectedProductTypeDiv #furniture #width_group input, body #product_form .product_add_div .selectedProductTypeDiv #furniture #length_group input {
+  display: block;
+  margin-left: 240px;
+}
+body #product_form .product_add_div .selectedProductTypeDiv #furniture #height_group label, body #product_form .product_add_div .selectedProductTypeDiv #furniture #width_group label, body #product_form .product_add_div .selectedProductTypeDiv #furniture #length_group label {
+  display: inline-block;
+  margin: 90px 25px -65px 25px;
+}
+input:focus {
+  border: 5px solid #15a6e7;
+}
+
+label {
+  margin: 25px;
+}
+
+/* This is our style for the invalid fields */
+input.invalid {
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus.invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+/*
+.error {
+  font-size: 35px;
+  color: white;
+  background-color: #900;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input.default {
+    color: black;
+    background-color: white;
+}
+.error.active {
+  padding: 5em;
+  height: 30px;
+  margin-right: -200px;
+}*/
+
+/*# sourceMappingURL=maincss.map */
