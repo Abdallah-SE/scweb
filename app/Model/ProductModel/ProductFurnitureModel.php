@@ -8,7 +8,8 @@ class ProductFurnitureModel extends ProductModel {
    
     public static $tableName = 'furniture';
     protected static $primaryKey = 'id';
-    public function __construct() {
+    public function __construct($dimensions) {
+        $this->dimensions = $dimensions;
     }
     public static $tableSchema = array(
         'product_type'       =>self::DATA_TYPE_STR,
@@ -36,9 +37,9 @@ class ProductFurnitureModel extends ProductModel {
     public function getID() {
         return $this->id;
     }
-    public function setDimensions($dimensions) {
+    /*public function setDimensions($dimensions) {
         $this->dimensions = $dimensions;
-    }
+    }*/
     public function getDimensions() {
         return  $this->dimensions;
     }

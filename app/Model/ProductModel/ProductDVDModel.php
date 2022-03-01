@@ -3,14 +3,14 @@ namespace SCANDIWEB\Model\ProductModel;
 use SCANDIWEB\Model\ProductModel\ProductModel;
 class ProductDVDModel extends ProductModel {
     
-    protected $product_type = 'DVD-disk';
+    protected $product_type = 'DVD';
     protected $size;
     protected $id;
    
     public static $tableName = 'dvd';
     protected static $primaryKey = 'id';
-    public function __construct() {
-        //$this->getProductProperties();
+    public function __construct($size) {
+        $this->size = $size;
     }
     public static $tableSchema = array(
         'product_type'       =>self::DATA_TYPE_STR,
@@ -35,9 +35,9 @@ class ProductDVDModel extends ProductModel {
     public function getID() {
         return $this->id;
     }
-    public function setSize($size) {
+    /*public function setSize($size) {
         $this->size = $size;
-    }
+    }*/
     public function getSize() {
         return  $this->size;
     }

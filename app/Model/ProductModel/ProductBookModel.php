@@ -9,8 +9,8 @@ class ProductBookModel extends ProductModel {
    
     public static $tableName = 'book';
     protected static $primaryKey = 'id';
-    public function __construct() {
-        //$this->getProductProperties();
+    public function __construct($weight) {
+         $this->weight = $weight;
     }
     public static $tableSchema = array(
         'product_type'       =>self::DATA_TYPE_STR,
@@ -35,9 +35,9 @@ class ProductBookModel extends ProductModel {
     public function getID() {
         return $this->id;
     }
-    public function setWeight($weight) {
+    /*public function setWeight($weight) {
         $this->weight = $weight;
-    }
+    }*/
     public function getWeight() {
         return  $this->weight;
     }
