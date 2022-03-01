@@ -28,10 +28,10 @@
             </div>
             <div class="select_group">
                 <label for="productType">Type Switcher</label>
-                <select id="productType">
+                <select id="productType" name="productType">
                     <option></option>
                     <option id="bookType"  value="Book">Book</option>
-                    <option id="DVDType"  value="DVD-disk">DVD</option>
+                    <option id="DVDType"  value="DVD">DVD</option>
                     <option id="furnitureType" value="Furniture">Furniture</option>
                 </select>
             </div>
@@ -47,7 +47,7 @@
             <label for="size">Size (MB) </label>
             <input type="int" name="size" id="size" value="<?= isset($_POST['size'])? $_POST['size'] : ''?>">
             <span class="error" aria-live="polite"></span>
-            <input type="hidden" id="typeDVD" name="unitDVD" value="DVD-disk">
+            <input type="hidden" id="typeDVD" name="unitDVD" value="DVD">
         </div>  
         <div id="furniture">
             <div id="height_group">
