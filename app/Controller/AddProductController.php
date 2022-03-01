@@ -27,7 +27,7 @@ class AddproductController extends AbstractController
                 $productOb->setPrice($this->filterStr($_POST['price']));
                 $productOb->setProductType(ucwords($_POST['productType']));
                 $productOb->CreateProducts();
-                $this->redirect('/products');
+                $this->redirect('/');
             }         
         }
         $this->_view();
