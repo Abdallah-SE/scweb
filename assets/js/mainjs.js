@@ -17,7 +17,7 @@ productType.onchange = function (){
         document.getElementById("typeFurniture").disabled = true;
         textProductUnit.textContent =  'Please, provide weight in kg.';
     }
-    if (productType.value === 'DVD-disk') {
+    if (productType.value === 'DVD') {
         document.getElementById("DVD").style.display= "block";
         document.getElementById("book").style.display= "none";
         document.getElementById("furniture").style.display= "none";
