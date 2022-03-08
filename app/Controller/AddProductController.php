@@ -17,11 +17,10 @@ class AddproductController extends AbstractController
     public function defaultAction() {
         if (isset($_POST['save_product'])) {
             if(isset($_POST['productType'])){
+                $unitValue = implode('X', $_POST['unitValue']);               
                 $productObject = ucwords($_POST['productType']);
                 $productObject = "SCANDIWEB\Model\ProductModel\\".'Product' . trim($productObject) . 'Model';///ProductBookModel
-                $productOb = new $productObject($this->filterStr($_POST['weight'])??
-                        $this->filterStr($_POST['size'])??
-                        ($this->filterStr($_POST['height']) .'X'. $this->filterStr($_POST['width']) .'X'. $this->filterStr($_POST['length'])));
+                $productOb = new $productObject($unitValue);
                 $productOb->setSKU($this->filterStr($_POST['sku']));
                 $productOb->setName($this->filterStr($_POST['name']));
                 $productOb->setPrice($this->filterStr($_POST['price']));
