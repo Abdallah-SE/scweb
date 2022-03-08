@@ -17,6 +17,7 @@ class AddproductController extends AbstractController
     public function defaultAction() {
         if (isset($_POST['save_product'])) {
             if(isset($_POST['productType'])){
+                
                 $unitValue = implode('X', $_POST['unitValue']);               
                 $productObject = ucwords($_POST['productType']);
                 $productObject = "SCANDIWEB\Model\ProductModel\\".'Product' . trim($productObject) . 'Model';///ProductBookModel
@@ -27,6 +28,7 @@ class AddproductController extends AbstractController
                 $productOb->setProductType(ucwords($_POST['productType']));
                 $productOb->CreateProducts();
                 $this->redirect('/');
+                
             }         
         }
         $this->_view();
