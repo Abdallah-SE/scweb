@@ -10,7 +10,7 @@ class ProductDVDModel extends ProductModel {
     public static $tableName = 'dvd';
     protected static $primaryKey = 'id';
     public function __construct($size) {
-        $this->size = $size;
+        $this->size = intval($size);
     }
     public static $tableSchema = array(
         'product_type'       =>self::DATA_TYPE_STR,

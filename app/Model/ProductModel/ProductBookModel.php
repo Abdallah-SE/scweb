@@ -10,7 +10,7 @@ class ProductBookModel extends ProductModel {
     public static $tableName = 'book';
     protected static $primaryKey = 'id';
     public function __construct($weight) {
-         $this->weight = $weight;
+         $this->weight = intval($weight);
     }
     public static $tableSchema = array(
         'product_type'       =>self::DATA_TYPE_STR,
