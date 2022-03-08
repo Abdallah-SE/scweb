@@ -20,7 +20,7 @@ class AddproductController extends AbstractController
                 
                 $unitValue = implode('X', $_POST['unitValue']);               
                 $productObject = ucwords($_POST['productType']);
-                $productObject = "SCANDIWEB\Model\ProductModel\\".'Product' . trim($productObject) . 'Model';///ProductBookModel
+                $productObject = "SCANDIWEB\Model\ProductModel\\".'Product' . trim($productObject) . 'Model';
                 $productOb = new $productObject($unitValue);
                 $productOb->setSKU($this->filterStr($_POST['sku']));
                 $productOb->setName($this->filterStr($_POST['name']));
